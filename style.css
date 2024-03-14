@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/bravingbird-KAZng7G20B0-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: rgb(255, 255, 255); 
+    padding: 50px 60px 70px;
+    border-radius: 15px;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(19, 40, 9);
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(19, 40, 9);
+
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0 ;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-field input{
+    width: 100%;
+    background: transparent;
+    /* outline: 0; */
+    border: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color:#999;
+
+}
+
+button{
+    width: 100%;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgb(19, 40, 9) ;
+}
+
+.input-field input:focus{
+    outline: 0;
+}
+
+.input-field.success input{
+    border-color: #09c372;
+}
+
+.input-field.error input{
+    border-color: #ff3860;
+}
+
+.input-field .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+
+}
